@@ -1,0 +1,6 @@
+- id: deep-flake
+  name: deep-flake
+  description: "Flake it"
+  entry: deep-flake
+  language: python
+  files: '.py'
