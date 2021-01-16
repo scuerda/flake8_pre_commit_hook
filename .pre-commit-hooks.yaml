@@ -1,6 +1,6 @@
-- id: deep-flake
-  name: deep-flake
+- id: flake8-monorepo
+  name: flake8-monorepo
   description: "Flake it"
-  entry: deep-flake
+  entry: flake8-monorepo
   language: python
   files: '.py'

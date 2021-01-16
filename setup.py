@@ -34,7 +34,7 @@ setup(
     description="Pre-commit hook for running flake8 in monorepo",
     entry_points={
         'console_scripts': [
-            'deep-flake=flake8_pre_commit_hook.flake8_pre_commit_hook:main',
+            'flake8-monorepo=flake8_pre_commit_hook.flake8_pre_commit_hook:main',
         ],
     },
     install_requires=requirements,
