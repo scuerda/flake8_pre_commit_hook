@@ -9,8 +9,6 @@ from collections import defaultdict
 
 
 def run_flake8(working_dir, files):
-    print(files)
-    print(working_dir)
     res = subprocess.run(('flake8', " ".join(files)), cwd=working_dir)
     return res.returncode
 
