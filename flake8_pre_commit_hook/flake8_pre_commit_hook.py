@@ -9,8 +9,12 @@ from collections import defaultdict
 
 
 def run_flake8(working_dir, files):
-    res = subprocess.run(('flake8', " ".join(files)), cwd=working_dir)
-    return res.returncode
+    results = [
+        (subprocess.run(('flake8', file_name), cwd=working_dir)).returncode
+        for file_name
+        in files
+    ]
+    return 1 if 1 in set(results) else 0
 
 
 def walk_up_to_flake(starting_dir: Path) -> str:
